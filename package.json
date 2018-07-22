@@ -1,7 +1,8 @@
 {
   "name": "frontend-components-boilerplate",
   "version": "1.0.0",
-  "description": "Kit de inicio para desarrollo frontend basado en componentes (Pug, Sass y JS)  y automatizado con Scripts NPM",  "main": "package.json",
+  "description": "Kit de inicio para desarrollo frontend basado en componentes (Pug, Sass y JS)  y automatizado con Scripts NPM",
+  "main": "package.json",
   "repository": {
     "type": "git",
     "url": ""
@@ -63,7 +64,7 @@
     "uglify-js": "^3.0.0",
     "uncss": "^0.14.1",
     "watchify": "^3.9.0"
-  }
+  },
   "dependencies": {
     "hammerjs": "^2.0.8"
   }

@@ -3,8 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-    < Jonathan MirCha > -- < Front end Architect > -- < @jonmircha >
+    <name> -- <role>
+    < Max Alva > -- < Frontend Developer >
 
 # THANKS
 
