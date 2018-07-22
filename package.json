@@ -1,11 +1,10 @@
 {
   "name": "frontend-components-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate para el desarrollo de proyectos Frontend basado en Componentes Web con metalenguajes y automatización y optimización de tareas con Scripts NPM",
-  "main": "package.json",
+  "description": "Kit de inicio para desarrollo frontend basado en componentes (Pug, Sass y JS)  y automatizado con Scripts NPM",  "main": "package.json",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jonmircha/frontend-components-boilerplate.git"
+    "url": ""
   },
   "scripts": {
     "sass": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./public/ ./src/scss/",
@@ -36,7 +35,7 @@
     "build": "npm run assets && npm run min && npm run serve",
     "start": "npm run devserve"
   },
-  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "author": "Max Alva <alva85@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.0.0",
@@ -56,7 +55,7 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.2",
     "node-sass-package-importer": "^3.0.4",
-    "parallelshell": "^2.0.0",
+    "parallelshell": "^3.0.2",
     "postcss-cli": "^3.2.0",
     "pug": "^2.0.0-beta11",
     "pug-cli": "^1.0.0-alpha6",
@@ -64,7 +63,7 @@
     "uglify-js": "^3.0.0",
     "uncss": "^0.14.1",
     "watchify": "^3.9.0"
-  },
+  }
   "dependencies": {
     "hammerjs": "^2.0.8"
   }

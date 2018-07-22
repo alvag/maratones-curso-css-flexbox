@@ -142,4 +142,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Webstorm
+.idea/
+
 # End of https://www.gitignore.io/api/osx,node,macos,linux,windows,visualstudiocode
