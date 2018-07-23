@@ -1,4 +1,5 @@
 extends ../includes/layout
+include ../includes/components/header_poster
 block metatags
     -var title = 'M A R A T O N - 42 KM'
     -var description = 'Bienvenid@, en este sitio encontrarás información sobre el maravilloso mundo de los Maratones.'
@@ -7,4 +8,11 @@ block metatags
     meta(name="application-name", content=title)
 block content
     main.Home.u-afterFixed
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illum labore possimus qui sit voluptatem voluptates! Assumenda consectetur consequuntur cum dignissimos doloremque obcaecati odio praesentium quod. Aut, error, reprehenderit? Aliquid!
+        +headerPoster('./img/home-lady-runner.jpg', 'Si entrenas tu mente para correr', 'todo lo demás será fácil')
+        p Frase 1
+        p Video 1
+        p Frase 2
+        p Video 2
+        p Frase 3
+        p Video 3
+        p Frase 4
