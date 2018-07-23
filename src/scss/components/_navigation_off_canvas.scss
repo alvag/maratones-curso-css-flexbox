@@ -95,7 +95,7 @@ $hamburger-color: #0096D9;
     transition:       transform .3s ease-out;
     @include panel-direction(left);
 
-    &-buttom {
+    &-button {
         z-index:      999;
         grid-area:    hamburger;
         justify-self: $hamburger-position;
@@ -103,4 +103,68 @@ $hamburger-color: #0096D9;
 }
 
 .Menu {
+    margin-top: calc(#{$header-height} + 2rem);
+
+    &-listItem {
+        display:        flex;
+        flex-direction: column;
+        text-align:     center;
+        list-style:     none;
+    }
+
+    &-link {
+        display:         block;
+        padding:         1rem;
+        font: {
+            weight: bold;
+            size:   1.5rem;
+        }
+        color:           $hamburger-color;
+        text-decoration: none;
+        transition:      all .3s ease-out;
+    }
+
+    &-link:hover {
+        color:      $header-color;
+        background: $hamburger-color;
+    }
+}
+
+@media screen and (min-width: 64em) {
+
+    .Header {
+        &-container {
+            grid-template: {
+                columns: auto 1fr;
+                rows:    $header-height;
+                areas:   'logo panel';
+            }
+        }
+    }
+
+    .Logo { justify-self: start;}
+
+    .Panel {
+        position:         static;
+        overflow-y:       visible;
+        transform:        translate(0, 0);
+        background-color: transparent;
+
+        &-button {display: none;}
+    }
+
+    .Menu {
+        margin-top: 0;
+
+        &-listItem {
+            flex-direction:  row;
+            justify-content: flex-end;
+            align-items:     center;
+        }
+
+        &-link:hover {
+            border-top:       medium solid $header-color;
+            background-color: transparent;
+        }
+    }
 }
