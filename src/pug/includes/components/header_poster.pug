@@ -1,5 +1,5 @@
 mixin headerPoster(image, title, subtitle)
-    article.Poster(style=`background-image: url(${image});`)
+    article.Poster.u-firstContent(style=`background-image: url(${image});`)
         div.Poster--opacity
             h2.Poster-title
                 span= title

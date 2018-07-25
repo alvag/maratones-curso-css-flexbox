@@ -3254,7 +3254,9 @@ a {
   width: 100%;
   height: 4rem;
   transition: all .3s ease-out;
-  background-color: rgba(23, 18, 38, 0.9); }
+  background-color: rgba(23, 18, 38, 0); }
+  .Header.is-active {
+    background-color: rgba(23, 18, 38, 0.9); }
   .Header-container {
     margin: auto;
     max-width: 1200px;
