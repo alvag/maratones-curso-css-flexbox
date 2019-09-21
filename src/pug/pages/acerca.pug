@@ -1,0 +1,11 @@
+extends ../includes/layout
+include ../includes/components/header_poster
+block metatags
+    -var title = 'Orígenes - M A R A T O N - 42'
+    -var description = 'En esta sección te explicamos todo sobre el origen de la Maratón.'
+    title= title
+    meta(name="description", content=description)
+    meta(name="application-name", content=title)
+block content
+    main.About
+        +headerPoster('./img/acerca-runners-steps.jpg', 'MARATON', '42 KM')
